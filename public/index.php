@@ -1,12 +1,14 @@
 <?php
 
-require "functions.php";
+const BASE_PATH = __DIR__ . '/../';
 
-require "Database.php";
+require BASE_PATH . "functions.php";
 
-require "Response.php";
+spl_autoload_register(function ($class) {
+    require base_path("Core/{$class}.php");
+});
 
-require "router.php";
+require base_path("router.php");
 
 // $config = require "config.php";
 
