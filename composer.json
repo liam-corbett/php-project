@@ -1,0 +1,32 @@
+{
+    "name": "liamcorbett/php-project",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Liam Corbett",
+            "email": "156666208+Liam-Corbett-Tagmarshal@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "illuminate/collections": "^12.20"
+    },
+    "autoload": {
+        "psr-4": {
+            "Core\\" : "Core/",
+            "Http\\": "Http/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "pestphp/pest": "^3.8"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}

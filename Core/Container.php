@@ -10,6 +10,9 @@ class Container
         $this->bindings[$key] = $resolver;
     }
 
+    /**
+     * @throws Exception
+     */
     public function resolve($key) {
 
         if(!array_key_exists($key, $this->bindings)) {
