@@ -35,5 +35,3 @@ vendor/bin/pest tests/Unit/ValidatorTest.php
 ```
 
 ---
-
-Feel free to update this README with more details about your project structure, features, or usage instructions!
